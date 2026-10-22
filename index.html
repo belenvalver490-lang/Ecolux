@@ -12,7 +12,19 @@
 <header class="top"><div class="brand">ECOLUX · ENERGÍA SOLAR</div><h1>Iluminación inteligente,<br>espacios más seguros.</h1><p>Propuesta 3D interactiva · Condominio / universidad</p></header>
 <aside class="panel"><h2>Diseño del producto</h2><div class="spec"><i class="dot"></i><div><b>Panel solar superior</b><span>Captación de energía durante el día</span></div></div><div class="spec"><i class="dot"></i><div><b>Luminaria LED</b><span>Luz eficiente para caminos y accesos</span></div></div><div class="spec"><i class="dot"></i><div><b>Estructura resistente</b><span>Poste metálico de diseño moderno</span></div></div><div class="spec"><i class="dot"></i><div><b>Uso recomendado</b><span>Condominios, patios y campus</span></div></div><div class="actions"><button id="reset">Vista inicial</button><button id="light">Encender luz</button></div></aside>
 <div class="hint">↔ <strong>Arrastra</strong> para girar · Pellizca o usa la rueda para acercar</div><div class="credit">Modelo conceptual · EcoLux</div>
-<script type="module">
+<script type="importmap">
+
+{
+
+  "imports": {
+
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+
+  }
+
+}
+
+</script>
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/controls/OrbitControls.js';
 const host=document.getElementById('scene');
